@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: "hsl(25, 97%, 53%)",
+              "light-gray": "hsl(217, 12%, 63%)",
+              "medium-gray": "hsl(216, 12%, 54%)",
+              "dark-blue": "hsl(213, 19%, 18%)",
+              "very-dark-blue": "hsl(216, 12%, 8%)",
+            },
+          },
+          fontFamily: {
+            overpass: ["Overpass", "sans-serif"],
+          },
+        },
+      };
+    </script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body
+    class="font-overpass text-white px-4 bg-very-dark-blue flex justify-center items-center h-screen"
+  >
+    <!-- Rating state start -->
+
+    <main class="max-w-lg bg-dark-blue p-5 rounded-xl">
+      <div class="rounded-full p-3 inline-block bg-medium-gray">
+        <img src="./images/icon-star.svg" alt="star icon" />
+      </div>
+
+      <h1 class="text-xl my-4">How did we do?</h1>
+
+      <p class="text-sm text-medium-gray">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve out offering!
+      </p>
+
+      <div class="my-7 flex justify-between">
+        <span
+          class="hover:bg-orange hover:text-white bg-medium-gray rounded-full w-10 h-10 grid place-items-center"
+          >1</span
+        >
+        <span
+          class="hover:bg-orange hover:text-white bg-medium-gray rounded-full w-10 h-10 grid place-items-center"
+          >2</span
+        >
+        <span
+          class="hover:bg-orange hover:text-white bg-medium-gray rounded-full w-10 h-10 grid place-items-center"
+          >3</span
+        >
+        <span
+          class="hover:bg-orange hover:text-white bg-medium-gray rounded-full w-10 h-10 grid place-items-center"
+          >4</span
+        >
+        <span
+          class="hover:bg-orange hover:text-white bg-medium-gray rounded-full w-10 h-10 grid place-items-center"
+          >5</span
+        >
+      </div>
+
+      <button
+        class="w-full bg-orange hover:bg-white hover:text-orange py-3 rounded-3xl"
+      >
+        submit
+      </button>
+    </main>
+  </body>
+</html>
